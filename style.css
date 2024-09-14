@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Passero+One&display=swap"); /*font-family: "Passero One", sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"); /*font-family: "Grape Nuts", cursive;*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d69d56;
+  border-radius: 2px;
+  border: none;
+}
+
+h1,
+h2 {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+body {
+  background: #000000;
+  font-family: calibri;
+  font-size: 1.3em;
+}
+
+
+.p1 {
+  width: 100%;
+  height: 500px;
+  background-image: url("src/fotos/fundo1.webp");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p1 img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+@media (max-width: 480px) {
+  .p1 img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.container img {
+  max-width: 490px;
+  max-height: 490px;
+  margin: 5px;
+}
+
+@media (max-width: 850px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .texto {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 780px) {
+  .container img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+.titulo {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.linha-divisoria {
+  position: relative;
+  width: 250px;
+  height: 2px;
+  background-color: #000000;
+  margin: 0 auto 20px auto;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.linha-divisoria::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #d4a152, transparent);
+  animation: brilhar 2s linear infinite;
+  border-radius: 2px;
+}
+
+@keyframes brilhar {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.texto {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0 auto;
+  font-family: "Grape Nuts", cursive;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+  .texto {
+    font-size: 18px;
+  }
+
+  .texto img{
+    max-width: 300px;
+    max-height: 400px;
+  }
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes a{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: all 0.5 ease-in-out;
+}
+
+.redes a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Grape Nuts", cursive;
+  transition: all 0.5 ease-in-out;
+}
+
+.redes a img{
+  max-width: 20px;
+  max-height: 20px;
+  margin: 5px;
+}
+
+.redes a:hover{
+  color: rgb(51, 90, 218);
+}
+
+
+
+@keyframes brilho1 {
+  0% {
+    box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.685);
+  }
+  50% {
+    box-shadow: 0 0 5px 2.5px rgba(105, 105, 105, 0.363);
+  }
+  100% {
+    box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.315);
+  }
+}
+
+.c2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 h1{
+  font-size: 30px;
+  font-family: "Passero One", sans-serif;
+  color: white;
+}
+
+.c2 iframe{
+  border-radius: 10px;
+  animation: brilho1 5s infinite;
+  margin: 20px;
+}
+
+@media (max-width: 480px) {
+  .c2 iframe {
+    width: 300px;
+  }
+}
+
+.galery{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gt1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gt1 h1{
+  font-size: 50px;
+  font-family: "Passero One", sans-serif;
+  color: white;
+}
+
+.galery img{
+  max-width: 500px;
+  max-height: 500px;
+  margin: 10px;
+}
+
+.gm{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gm a{
+  font-size: 30px;
+  font-family: "Passero One", sans-serif;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.gm img{
+  max-width: 100px;
+  max-height: auto;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #c4ac23;
+  box-shadow: 0px 15px 20px rgba(226, 229, 46, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.responsive-box {
+  font-family: "Passero One", sans-serif;
+  color: white;
+  width: 80%; 
+  max-width: 600px; 
+  padding: 20px;
+  margin: 0 auto; 
+  background-color: #000000;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+      width: 90%; 
+      padding: 15px;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 12px;
+  color: #333;
+  margin: 5px 0;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
